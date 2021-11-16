@@ -1595,7 +1595,7 @@ element.style {
 
 .events__container {
     padding-top: 75px;
-    padding-bottom: 80px;
+    padding-bottom: 79px;
 }
 
 .events__title {
@@ -2272,7 +2272,7 @@ element.style {
     flex-direction: column;
     padding-top: 120px;
     width: 40%;
-    padding-bottom: 121px;
+    padding-bottom: 120px;
 }
 
 .placen-name__adress {
@@ -3220,7 +3220,7 @@ element.style {
     }
     .contacts__content__form {
         width: 47.5%;
-        padding-bottom: 101px;
+        padding-bottom: 100px;
     }
     .contacts__form__input {
         width: 76.3%;
@@ -3402,7 +3402,7 @@ element.style {
     /* EVENTS */
     .events__container {
         padding-top: 58px;
-        padding-bottom: 81px;
+        padding-bottom: 80px;
     }
     .events__content {
         padding-bottom: 138px;
@@ -3422,7 +3422,7 @@ element.style {
         -ms-flex-direction: column;
         flex-direction: column;
         padding-top: 84px;
-        padding-bottom: 61px;
+        padding-bottom: 60px;
     }
     .edition__categories__list {
         display: -webkit-box;
@@ -3481,6 +3481,7 @@ element.style {
     }
     .contacts__content__form {
         width: 56%;
+        padding-bottom: 101px;
     }
     .contacts__form__input {
         width: 89.5%;
@@ -3707,7 +3708,7 @@ element.style {
     }
     .contacts__content__form {
         width: 100%;
-        padding: 0 0 28px 0;
+        padding: 0 0 27px 0;
     }
     .contacts__content__placen-name {
         font-size: 18px;
@@ -3972,7 +3973,7 @@ element.style {
     /* EVENTS */
     .events__container {
         padding-top: 40px;
-        padding-bottom: 30px;
+        padding-bottom: 29px;
     }
     .events__title {
         margin-bottom: 13px;
@@ -4030,7 +4031,7 @@ element.style {
         margin-right: 30px;
     }
     .edition__swiper-slide {
-        margin-top: 50px;
+        margin-top: 49.6px;
     }
     .edition__swiper__card__title, .edition__swiper__card__author, .edition__swiper__card__price, .edition__swiper__card__btn {
         font-size: 12px;
