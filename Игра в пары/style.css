@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 50px 0;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.playing-field {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: calc((100% - 75px) / 4);
+  height: 150px;
+  border: 1px solid #333;
+  border-radius: 10%;
+  background-color: aqua;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.card:not(:nth-child(4n)) {
+  margin-right: 25px;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  background-color: blue;
+  cursor: pointer;
+  transition: opacity .3s ease-in-out;
+}
+
+.card--active::after {
+  opacity: 0;
+}
+
+.btn-repeat {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: blue;
+  color: #fff;
+  font-weight: normal;
+  font-size: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-repeat--active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
