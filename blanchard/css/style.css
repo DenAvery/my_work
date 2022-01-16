@@ -3151,6 +3151,8 @@ element.style {
     }
 
     .header__search__block__search-form__input {
+        -webkit-appearance: none;
+        border-radius: 0;
         display: block;
         background-color: transparent;
         border-bottom: 1px solid rgba(255, 255, 255, 0.85);
@@ -3161,6 +3163,8 @@ element.style {
         line-height: 25px;
         color: rgba(255, 255, 255, 0.85);
     }
+
+    
 
     .search__adaptive--active {
         display: block;
