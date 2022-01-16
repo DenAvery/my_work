@@ -451,21 +451,21 @@
 
         tippy('.project__tooltip-one', {
             content: "Пример современных тенденций - современная методология разработки",
-            trigger: 'focus',
+            trigger: 'click',
             duration: 300,
             maxWidth: 264,
         });
 
         tippy('.project__tooltip-two', {
             content: "Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции",
-            trigger: 'focus',
+            trigger: 'click',
             duration: 300,
             maxWidth: 264,
         });
 
         tippy('.project__tooltip-three', {
             content: "В стремлении повысить качество",
-            trigger: 'focus',
+            trigger: 'click',
             duration: 300,
             maxWidth: 230,
         });
