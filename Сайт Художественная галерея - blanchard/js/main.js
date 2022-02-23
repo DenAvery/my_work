@@ -1,4 +1,4 @@
-(function () {
+(() => {
     document.addEventListener('DOMContentLoaded', function () {
         // SEARCH ADAPTIVE
 
@@ -762,4 +762,4 @@
         modalMoves();
 
     })
-})()
+}) ()
