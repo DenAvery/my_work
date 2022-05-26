@@ -1,0 +1,158 @@
+.footer {
+  background-color: $darkfill;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $colorGray;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  &__logo,
+  &__descr,
+  &__social {
+    flex-direction: column;
+  }
+
+  &__logo {
+    font-family: $FFtitle;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #E9E9E9;
+  }
+
+  &__descr {
+    margin-left: -118px;
+    padding: 10px 5px 0;
+    max-width: 378px;
+
+    &__copyright {
+      color: #666666;
+    }
+  }
+
+  &__social {
+
+    flex-direction: column;
+
+    &__text {
+      margin-bottom: 5px;
+    }
+
+    &__list {
+      justify-content: space-around;
+      padding-left: 5px;
+      padding-right: 2px;
+      margin-bottom: -10px;
+    }
+
+    &__link {
+      &__icon {
+        width: 30px;
+        height: 30px;
+        fill: $colorGray;
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .footer {
+    &__container {
+      padding-top: 20px;
+    }
+
+    &__logo {
+      margin-right: 74px;
+    }
+
+    &__descr {
+      margin-left: 0;
+      padding-top: 3px;
+    }
+
+    &__social {
+      &__text {
+        margin-bottom: 12px;
+      }
+
+      &__list {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+
+  .logo {
+    max-width: 71%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__logo {
+      margin-right: 0;
+    }
+
+    &__descr {
+      display: none;
+    }
+
+    &__social__text {
+      padding-top: 3px;
+      margin-bottom: 9px;
+    }
+  }
+}
+
+
+@media (max-width: 724px) {
+  .footer {
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding: 31px 0 0;
+    }
+
+    &__logo .logo {
+      max-width: 113px;
+
+    }
+
+    &__logo {
+      order: 2;
+      display: flex;
+      align-items: center;
+      background-color: #4A4A4A;
+      padding: 13px;
+
+      &__descr {
+        font-size: 10px;
+        line-height: 13px;
+      }
+    }
+
+    &__social {
+      align-items: center;
+      order: 1;
+      padding-bottom: 25px;
+
+      &__text {
+        padding-top: 0;
+      }
+
+
+      &__item:not(:last-child) {
+        margin-right: 21.5px;
+      }
+    }
+  }
+}

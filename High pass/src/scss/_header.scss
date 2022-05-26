@@ -1,0 +1,312 @@
+@import '_variables';
+
+.header-form {
+  display: none;
+}
+
+.nav-mobile, .header__mini {
+    display: none;
+}
+
+.header {
+  background-color: $darkfill;
+  &__logo {
+    display: block;
+    margin-right: 10.9%;
+  }
+
+  &__container {
+    align-items: center;
+    padding-top: 23.5px;
+    padding-bottom: 21.5px;
+  }
+}
+
+.nav {
+  margin-right: auto;
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 745px;
+  }
+
+  &__item {
+    display: block;
+    white-space: nowrap;
+
+  }
+  &__item:not(:last-child) {
+    margin-right: 79px;
+  }
+
+  &__link {
+    font-family: $FFlink;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $colorWhite;
+  }
+}
+
+.social {
+  &__link {
+    cursor: pointer;
+    display: flex;
+    width: 30px;
+    height: 30px;
+  }
+  &__icon {
+    fill: $colorGray;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+
+
+
+
+@media (max-width: 1300px) {
+  .nav {
+    &__item:not(:last-child) {
+      margin-right: 33px;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+
+  .social {
+    display: none;
+  }
+
+  .header {
+    &__container {
+      padding-top: 26px;
+      padding-bottom: 23px;
+    }
+    &__logo {
+      width: 166px;
+      margin-right: 8.5%;
+    }
+  }
+
+
+  .header-form {
+    display: flex;
+    margin-top: -3px;
+    position: relative;
+
+    &__input::placeholder {
+      font-family: $FFtitle;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: $colorGray;
+    }
+
+    &__container {
+      position: absolute;
+      display: none;
+      bottom: -46px;
+      right: 2px;
+      background-color: $darkfill;
+      padding: 5px 0;
+      z-index: 200;
+    }
+
+    &__input {
+      width: 307px;
+      background-color: transparent;
+      border-bottom: 1px solid $colorWhite ;
+      color: $colorWhite;
+      margin-right: 9px;
+    }
+
+    &__btn-close {
+      background-image: url(../img/input-off.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 23px;
+      height: 23px;
+      background-color: transparent;
+    }
+
+    &__btn {
+      display: flex;
+      width: 25px;
+      height: 25px;
+      background: url(../img/Search.svg) transparent no-repeat;
+      background-position: center center;
+    }
+  }
+
+
+  .active-search {
+    display: flex;
+  }
+
+}
+
+@media (max-width: 940px) {
+
+  .header {
+    &__container {
+      justify-content: space-between;
+    }
+
+    &__mini {
+      display: flex;
+      background-color: #4A4A4A;
+      padding: 12px 27px;
+    }
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    width: 100%;
+
+
+    &__btn {
+      display: none;
+    }
+
+    &__tel {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &__link {
+      font-family: $FFlink;
+      color: $colorWhite;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+
+
+}
+
+@media (max-width: 600px) {
+
+  .header {
+    &__container {
+      padding-bottom: 22px;
+    }
+
+    &__mini {
+      position: relative;
+      padding: 13.5px 21px;
+    }
+
+    &__logo {
+      width: 112px;
+    }
+  }
+
+  .header-form {
+    &__btn {
+      background: url(../img/Search-mobile.svg) no-repeat transparent center center;
+      width: 20px;
+      height: 20px;
+    }
+
+    &__input {
+      width: 200px;
+    }
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+
+    &__line {
+      width: 20px;
+      height: 2px;
+      background-color: $colorWhite
+    }
+
+    &__line:not(:last-child) {
+      margin-bottom: 6px;
+    }
+
+    &__line--bottom {
+      width: 10px;
+    }
+  }
+
+
+  .nav-mobile {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $darkfill;
+    padding: 14px 21px;
+    border-top: 1px solid $colorGray;
+    z-index: 100;
+
+    &__btn {
+      display: flex;
+      background-color: transparent;
+      margin-bottom: 16px;
+    }
+
+    &__img {
+      width: 18px;
+      height: 18px;
+    }
+
+    &__list {
+      flex-direction: column;
+      margin-bottom: 212px;
+    }
+    &__link {
+      font-family: $FFtitle;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: $colorWhite;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &__tel {
+      display: flex;
+      align-items: center;
+      font-family: $FFtitle;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: $currentColor;
+
+    }
+  }
+
+  .active {
+    display: flex;
+  }
+
+}
+
+
+
+

@@ -1,0 +1,152 @@
+@media (min-width: 1024px) {
+
+
+  // HOVER effect
+
+
+  .nav__link:hover {
+    color: $currentColor;
+    transition: color .3s ease-in-out;
+  }
+
+  .footer__social__link:hover svg, .social__link:hover svg {
+    fill: $currentColor;
+    transition: fill .3s ease-in-out;
+  }
+
+  .hero__left-block__btn:hover {
+    background-color: $focusColor;
+    transition: background-color .3s ease-in-out;
+  }
+
+  .about__subscribe__form__input:hover::placeholder{
+    color: $currentColor;
+    transition: color .3s ease-in-out;
+  }
+
+  .about__subscribe__form__btn:hover {
+    background-color: $focusColor;
+    transition: background-color .3s ease-in-out;
+  }
+
+  .projects__card__btn:hover {
+    background-color: $currentColor;
+    transition: background-color .3s ease-in-out;
+  }
+
+  .header__form__input:hover {
+    border-color: $currentColor;
+    transition: border-color .3s ease-in-out;
+  }
+
+  .contacts__content__form__input:hover::placeholder {
+    color: $currentColor;
+    transition: color .3s ease-in-out;
+  }
+
+  .contacts__content__form__btn:hover {
+    background-color: $focusColor;
+    transition: background-color .3s ease-in-out;
+  }
+
+
+}
+
+  // FOCUS effect
+
+  .nav__link:focus-visible {
+    background-color: $focusColor;
+    transition: background-color .3s ease-in-out;
+  }
+
+  .footer__social__link:focus-visible svg, .social__link:focus-visible svg {
+    fill: $focusColor;
+    transition: fill .3s ease-in-out;
+  }
+
+  .hero__left-block__btn:focus-visible {
+    max-height: 50px;
+    border: 3px solid $activeColor;
+    transition: border .3s ease-in-out;
+  }
+
+  .about__subscribe__form__input:focus-visible {
+    border: 1px solid $currentColor;
+    transition: border .3s ease-in-out;
+  }
+
+  .about__subscribe__form__btn:focus-visible {
+    max-width: 126px;
+    max-height: 50px;
+    border: 3px solid $activeColor;
+    transition: border .3s ease-in-out;
+  }
+
+  .projects__card__btn:focus-visible {
+    max-width: 121px;
+    max-height: 50px;
+    border: 3px solid $currentColor;
+    background-color: $activeColor;
+    transition: background-color .3s ease-in-out;
+    transition: border .3s ease-in-out;
+  }
+
+  .header__form__input:focus-visible {
+    border-color: $currentColor;
+    transition: border-color .3s ease-in-out;
+  }
+
+  .contacts__content__form__input:focus-visible{
+    border: 1px solid $currentColor;
+    transition: border .3s ease-in-out;
+  }
+
+  .contacts__content__form__btn:focus-visible {
+    max-width: 126px;
+    height: 50px;
+    padding: 0;
+    border: 3px solid $currentColor;
+    background-color: $activeColor;
+    transition: background-color .3s ease-in-out;
+    transition: border .3s ease-in-out;
+  }
+
+
+  // ACTIVE effect
+
+
+  .nav__link:active {
+    color: $activeColor;
+    transition: color .3s ease-in-out;
+  }
+
+  .footer__social__link:active svg, .social__link:active svg {
+    fill: $activeColor;
+    transition: fill .3s ease-in-out;
+  }
+
+  .hero__left-block__btn:active {
+    background-color: $activeColor;
+    transition: background-color .3s ease-in-out;
+  }
+
+  .about__subscribe__form__btn:active {
+    background-color: $activeColor;
+    transition: background-color .3s ease-in-out;
+  }
+
+  .projects__card__btn:active {
+    border: 3px solid $activeColor;
+    background-color: $activeColor;
+    transition: background-color .3s ease-in-out;
+  }
+
+  .header__form__input:active {
+    border-color: $activeColor;
+    transition: border-color .3s ease-in-out;
+  }
+
+  .contacts__content__form__btn:active {
+    background-color: $activeColor;
+    transition: background-color .3s ease-in-out;
+  }
